@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "Katia Kelly Kreozman",
+        "endereço": "Av. Di Cavalcanti, 20 - Barra da Tijuca"
+    },
+    {
+        "nome": "Enzo Marcos Esquizittoni",
+        "endereço": "Av. Paulista, 2381 - Cerqueira César"
+    },
+    {
+        "nome": "Wilson Willian Kreozman",
+        "coordenadas": [-43.415094, -22.998373]
+    },
+    {
+        "nome": "Flora Maria Esquizittoni",
+        "coordenadas": [-46.661615, -23.557047]
+    }
+]
