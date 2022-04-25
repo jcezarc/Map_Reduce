@@ -12,13 +12,14 @@ def pessoas_que_moram_juntas() -> dict:
             else:
                 coord = pessoa['coordenadas']
                 pessoa['endereço'] = mapbox.get_address(*coord)
-            key = '-'.join(str(c) for c in coord)
-            locais.setdefault(key, []).append(pessoa)
+            locais.setdefault(str(coord), []).append(pessoa)
     return locais
 
 
 print('PESSOAS QUE MORAM JUNTAS:'.center(50, '='))
-for mesma_casa in pessoas_que_moram_juntas().values():
-    for pessoa in mesma_casa:
-        print(f'{pessoa["nome"]}\n\tmora em {pessoa["endereço"]}')
+for casa in pessoas_que_moram_juntas().values():
+    for pessoa in casa:
+        print('{}\n\tmora em {}'.format(
+            pessoa['nome'], pessoa['endereço']
+        ))
     print('-' * 50)
